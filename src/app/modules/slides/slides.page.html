@@ -1,0 +1,146 @@
+<ion-header translucent>
+</ion-header>
+<ion-content>
+    <ion-slides *ngIf="show" class="full-height full-width" [options]="slideOpts">
+        <ion-slide>
+            <div class="container-slide">
+                <div class="row" style="margin: 0px !important;">
+                    <!-- Imagen para deslizar -->
+                    <div class="col-12 content-slide">
+                        <ion-label class="full-width text2">
+                            <b>¡Delice para acceder a JAR!</b></ion-label>
+                    </div>
+                    <div class="col-12 col">
+                        <img src="../../../assets/img/swipe.png" alt="" class="image-1">
+                    </div>
+
+                </div>
+                <div class="container-points">
+                    <div class="circulo-act"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="container-slide">
+                <div class="row" style="margin: 0px !important;">
+                    <!-- Imagen de ubicación -->
+                    <div class="col-12 col">
+                        <img src="../../../assets/img/location (1).svg" alt="" class="image-1">
+                    </div>
+                    <div class="col-12 content-slide">
+                        <ion-label class="full-width text2">
+                            <b>Bienvenido a JAR</b></ion-label>
+                    </div>
+                    <!-- Texto del silde -->
+                    <div class="col-12 content-slide">
+                        <ion-label class="text1">
+                            Registre y controle la asistencia de los estudiantes aquí. Veala cuando desee.
+                        </ion-label>
+                    </div>
+                </div>
+                <div class="container-points">
+                    <div class="circulo"></div>
+                    <div class="circulo-act"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="container-slide">
+                <div class="row" style="margin: 0px !important;">
+                    <!-- Imagen de ubicación -->
+                    <div class="col-12 col">
+                        <img src="../../../assets/img/location.svg" alt="" class="image-1">
+                    </div>
+                    <div class="col-12 content-slide">
+                        <ion-label class="full-width text2">
+                            <b>Geolocalización</b>
+                        </ion-label>
+                    </div>
+                    <!-- Texto del silde -->
+                    <div class="col-12 content-slide">
+                        <ion-label class="text1">
+                            En un radio de 10 metros. Tome su asistencia desde diferentes partes del aula de clase.
+                        </ion-label>
+                    </div>
+                </div>
+                <div class="container-points">
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo-act"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="container-slide">
+                <div class="row" style="margin: 0px !important;">
+                    <!-- Imagen de ubicación -->
+                    <div class="col-12 col">
+                        <img src="../../../assets/img/calendar1.svg" alt="" class="image-1">
+                    </div>
+                    <div class="col-12 content-slide">
+                        <ion-label class="full-width text2">
+                            <b>Extraiga los registros</b>
+                        </ion-label>
+                    </div>
+                    <!-- Texto del silde -->
+                    <div class="col-12 content-slide">
+                        <ion-label class="text1">
+                            Exporte la información de las listas de asistencia por día, semanas o meses.
+                        </ion-label>
+                    </div>
+                </div>
+                <div class="container-points">
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo-act"></div>
+                    <div class="circulo"></div>
+                </div>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="container-slide">
+                <div class="row" style="margin: 0px !important;">
+                    <!-- Imagen de ubicación -->
+                    <div class="col-12 col">
+                        <img src="../../../assets/img/keys.svg" alt="" class="image-1">
+                    </div>
+                    <div class="col-12 content-slide">
+                        <ion-label class="full-width text2">
+                            <b>Registre asistencia</b>
+                        </ion-label>
+                    </div>
+                    <!-- Texto del silde -->
+                    <div class="col-12 content-slide">
+                        <ion-button class="button-1" color="warning" expand="block" (click)="goToHome()">
+                            Registrar
+                            <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                        </ion-button>
+                    </div>
+                    <div class="col-12 content-slide">
+                        <ion-button class="button-1" expand="block" (click)="goToLogin()">
+                            Iniciar sesión
+                            <ion-icon slot="end" name="arrow-forward"></ion-icon>
+                        </ion-button>
+                    </div>
+                </div>
+                <div class="container-points">
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo"></div>
+                    <div class="circulo-act"></div>
+                </div>
+            </div>
+        </ion-slide>
+    </ion-slides>
+</ion-content>
