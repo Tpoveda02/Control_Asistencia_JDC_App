@@ -1,0 +1,7 @@
+{
+  "name": "Control_Asistencia_JDC_App",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

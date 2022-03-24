@@ -1,0 +1,47 @@
+<ion-header>
+</ion-header>
+<ion-content>
+    <div class="container-all">
+        <div class="container-form">
+            <div class="row">
+                <img src="../../../assets/img/pin.svg" class="img_logo" height="160px" alt="">
+                <div class="col-12">
+                    <mat-form-field class="full-width">
+                        <mat-label>Correo</mat-label>
+                        <input matInput (focus)="focus()" (focusout)="focusout()" [formControl]="email" required class="text">
+                        <mat-error *ngIf="email.invalid">{{getErrorMessageEmail()}}</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-5" style="text-align: start; margin-top: 19px;">
+                    <ion-label class="text" style="text-align: center !important;">
+                        @jdc.edu.co.
+                    </ion-label>
+                </div>
+                <div class="col-12">
+                    <mat-form-field class="full-width">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput (focus)="focus()" (focusout)="focusout()" [formControl]="password" [type]="hide ? 'password' : 'text'" required class="text">
+                        <button mat-icon-button matSuffix (click)="hide = !hide">
+                                    <mat-icon class="color-gray" style="font-size: x-large;">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                                </button>
+                        <mat-error *ngIf="password.invalid">{{getErrorMessagePassword()}}</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="col-12" class="center">
+                    <ion-button color="warning" (click)="singIn()" style="width: 70%; margin-bottom: 20px; margin-top: 10px;">Ingresar</ion-button>
+                </div>
+                <div class="col-12" class="center">
+                    <a [routerLink]="['../register']" routerDirection="forward" class="text1">Crear una cuenta</a>
+                </div>
+                <div class="col-12" class="center">
+                    <a routerLink="send-code" routerDirection="forward" class="text1">Olvide mi contraseña</a>
+                </div>
+            </div>
+            <div class="row" *ngIf="loading">
+                <div class="col-12 center-horizontal" style="margin-top: 10px;">
+                    <img src="../../../assets/img/loading.svg" height="40px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

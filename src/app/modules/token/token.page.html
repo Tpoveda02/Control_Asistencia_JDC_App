@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>token</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-card>
+            <ion-row>
+                <ion-col>
+                    <ion-label>Ingrese el TOKEN</ion-label>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-input type="text" placeholder="    Ingrese el TOKEN" #token></ion-input>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <a href="">¿No has recibido el TOKEN?</a>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-button (click)="getCourse()">Iniciar sesión</ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-card>
+    </ion-grid>
+
+</ion-content>
