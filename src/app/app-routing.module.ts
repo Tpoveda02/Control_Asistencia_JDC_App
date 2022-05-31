@@ -15,7 +15,7 @@ import { PresenceStudentPageModule } from './modules/presence-student/presence-s
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
   {path: 'slides',loadChildren: () => SlidesPageModule, canActivate: [ServiceAccountService]},
   {path: 'login', loadChildren: () =>  LoginPageModule},
   {path: 'token', loadChildren: () =>  TokenPageModule},
